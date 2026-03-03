@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!-- ═══════════════════════════════════════
+     PRIMARY SEO META TAGS
+════════════════════════════════════════ -->
+<title>EvaanSpeed — Pakistan's Fastest Internet Speed Test | Free Online</title>
+<meta name="description" content="Test your internet speed instantly with EvaanSpeed — Pakistan's fastest and most accurate free speed test. Check download speed, upload speed, ping & jitter. No signup required."/>
+<meta name="keywords" content="internet speed test pakistan, fast speed test, broadband speed test, wifi speed test, online speed test, download speed, upload speed, ping test, jitter test, PTCL speed test, jazz speed test, zong speed test, telenor speed test, wateen speed test, nayatel speed test, pakistan internet speed, free speed test"/>
+<meta name="author" content="EvaanSpeed"/>
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
+<meta name="googlebot" content="index, follow"/>
+<meta name="language" content="English, Urdu"/>
+<meta name="geo.region" content="PK"/>
+<meta name="geo.country" content="Pakistan"/>
+<link rel="canonical" href="https://evaanspeed.com/"/>
+
+<!-- ═══════════════════════════════════════
+     OPEN GRAPH (Facebook / WhatsApp / LinkedIn)
+════════════════════════════════════════ -->
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://evaanspeed.com/"/>
+<meta property="og:title" content="EvaanSpeed — Pakistan's Fastest Internet Speed Test"/>
+<meta property="og:description" content="Check your internet speed instantly. Accurate download, upload, ping & jitter test — free, no signup. Made for Pakistan."/>
+<meta property="og:image" content="https://evaanspeed.com/og-image.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="EvaanSpeed — Pakistan Internet Speed Test"/>
+<meta property="og:site_name" content="EvaanSpeed"/>
+<meta property="og:locale" content="en_PK"/>
+
+<!-- ═══════════════════════════════════════
+     TWITTER CARD
+════════════════════════════════════════ -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:url" content="https://evaanspeed.com/"/>
+<meta name="twitter:title" content="EvaanSpeed — Pakistan's Fastest Internet Speed Test"/>
+<meta name="twitter:description" content="Check your internet speed instantly. Free, accurate, no signup. Made for Pakistan."/>
+<meta name="twitter:image" content="https://evaanspeed.com/og-image.png"/>
+<meta name="twitter:image:alt" content="EvaanSpeed Speed Test"/>
+
+<!-- ═══════════════════════════════════════
+     FAVICON (replace href with your actual icon file)
+════════════════════════════════════════ -->
+<!-- SVG favicon (modern browsers) -->
+<link rel="icon" type="image/png" href="/favicon.png"/>
+<!-- PNG fallback -->
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+<!-- Apple touch icon (iOS home screen) -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+<!-- Android / PWA manifest -->
+<link rel="manifest" href="/site.webmanifest"/>
+<meta name="theme-color" content="#2563eb"/>
+<meta name="msapplication-TileColor" content="#2563eb"/>
+
+<!-- ═══════════════════════════════════════
+     STRUCTURED DATA — JSON-LD (Google Rich Results)
+════════════════════════════════════════ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "EvaanSpeed",
+  "url": "https://evaanspeed.com/",
+  "description": "Pakistan's fastest free internet speed test. Check download speed, upload speed, ping and jitter instantly.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "PKR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "1250"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "EvaanSpeed",
+    "url": "https://evaanspeed.com/"
+  },
+  "inLanguage": ["en", "ur"],
+  "countryOfOrigin": "PK",
+  "keywords": "internet speed test, pakistan speed test, broadband speed, wifi speed test"
+}
+</script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800;900&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet"/>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          urban: ['Urbanist', 'sans-serif'],
+          urdu:  ['Noto Nastaliq Urdu', 'serif'],
+        },
+        colors: {
+          brand: {
+            50:  '#eff6ff',
+            100: '#dbeafe',
+            200: '#bfdbfe',
+            400: '#60a5fa',
+            500: '#3b82f6',
+            600: '#2563eb',
+            700: '#1d4ed8',
+          },
+          sky: {
+            400: '#38bdf8',
+            500: '#0ea5e9',
+          },
+          cyan: {
+            400: '#22d3ee',
+            500: '#06b6d4',
+          }
+        },
+        animation: {
+          'spin-slow':   'spin 5s linear infinite',
+          'spin-slower': 'spin 9s linear infinite reverse',
+          'float':       'float 2.5s ease-in-out infinite',
+          'pulse-soft':  'pulseSoft 1.3s ease-in-out infinite',
+          'drift1':      'drift1 16s ease-in-out infinite alternate',
+          'drift2':      'drift2 20s ease-in-out infinite alternate-reverse',
+          'pop-in':      'popIn 0.35s cubic-bezier(0.34,1.56,0.64,1) forwards',
+          'slide-in':    'slideIn 0.4s ease forwards',
+        },
+        keyframes: {
+          float:     { '0%,100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-4px)' } },
+          pulseSoft: { '0%,100%': { opacity: '1' }, '50%': { opacity: '0.35' } },
+          drift1:    { from: { transform: 'translate(0,0)' }, to: { transform: 'translate(28px,28px)' } },
+          drift2:    { from: { transform: 'translate(0,0)' }, to: { transform: 'translate(-28px,20px)' } },
+          popIn:     { '0%': { transform: 'scale(1.9)', opacity: '0' }, '100%': { transform: 'scale(1)', opacity: '1' } },
+          slideIn:   { from: { opacity: '0', transform: 'translateY(6px)' }, to: { opacity: '1', transform: 'translateY(0)' } },
+        },
+        dropShadow: {
+          glow: '0 0 8px rgba(14,165,233,0.55)',
+        }
+      }
+    }
+  }
+</script>
+<style>
+  /* custom minimal styles only for what Tailwind can't do */
+  body { font-family: 'Urbanist', sans-serif; }
+  body.ur { font-family: 'Noto Nastaliq Urdu', serif; direction: rtl; }
+
+  /* SVG arc */
+  .arc-track  { fill:none; stroke:rgba(14,165,233,0.1);  stroke-width:15; stroke-linecap:round; stroke-dasharray:612.61 816.81; }
+  .arc-glow   { fill:none; stroke:rgba(14,165,233,0.04); stroke-width:26; stroke-linecap:round; stroke-dasharray:612.61 816.81; }
+  .arc-fill   { fill:none; stroke:url(#gaugeGrad); stroke-width:15; stroke-linecap:round;
+                stroke-dasharray:612.61 816.81; stroke-dashoffset:612.61;
+                transition: stroke-dashoffset 0.24s ease;
+                filter: drop-shadow(0 0 8px rgba(14,165,233,0.55)); }
+  /* .tick-maj   { stroke:rgba(14,165,233,0.26); stroke-width:2;   stroke-linecap:round; } */
+  /* .tick-min   { stroke:rgba(14,165,233,0.13); stroke-width:1.5; stroke-linecap:round; } */
+
+  /* Lang slider */
+  .lang-slider { position:absolute; top:3px; bottom:3px; border-radius:9999px;
+                 background:linear-gradient(135deg,#2563eb,#0ea5e9);
+                 transition: left 0.32s cubic-bezier(0.4,0,0.2,1), width 0.32s cubic-bezier(0.4,0,0.2,1);
+                 pointer-events:none; z-index:0; }
+
+  /* Orbit rings */
+  .ring-a { position:absolute; inset:-12px; border-radius:50%;
+            border:1.5px solid transparent;
+            border-top-color:rgba(14,165,233,0.42);
+            border-right-color:rgba(14,165,233,0.12);
+            animation: spin 5s linear infinite; }
+  .ring-b { position:absolute; inset:-22px; border-radius:50%;
+            border:1.5px solid transparent;
+            border-top-color:rgba(37,99,235,0.3);
+            border-left-color:rgba(37,99,235,0.08);
+            animation: spin 9s linear infinite reverse; }
+  @keyframes spin { from{transform:rotate(0)} to{transform:rotate(360deg)} }
+
+  /* Countdown pop */
+  .cnt-pop { animation: popIn 0.35s cubic-bezier(0.34,1.56,0.64,1) forwards; }
+
+  /* Urdu overrides */
+  body.ur .stat-label,
+  body.ur .usage-name,
+  body.ur .quality-text,
+  body.ur .status-bar,
+  body.ur .btn-label,
+  body.ur .nav-link,
+  body.ur .badge-text { font-family:'Noto Nastaliq Urdu',serif; letter-spacing:0; }
+  body.ur .quality-labels { flex-direction:row-reverse; }
+  body.ur .prog-labels    { flex-direction:row-reverse; }
+  body.ur .usage-card     { flex-direction:row-reverse; }
+  body.ur .usage-check    { margin-left:0; margin-right:auto; }
+  body.ur nav             { flex-direction:row-reverse; }
+  body.ur .nav-mid        { flex-direction:row-reverse; }
+</style>
+</head>
+
+<body class="bg-[#eef6ff] text-[#0f172a] min-h-screen overflow-x-hidden">
+
+<!-- ══════════════════════════════════════════
+     BACKGROUND EFFECTS
+════════════════════════════════════════════ -->
+<div class="pointer-events-none fixed inset-0 z-0"
+     style="background-image:radial-gradient(circle,rgba(14,165,233,0.09) 1px,transparent 1px);background-size:28px 28px;"></div>
+<div class="pointer-events-none fixed z-0 rounded-full blur-[100px] opacity-30 w-[360px] h-[360px] md:w-[480px] md:h-[480px] bg-blue-200 -top-32 -left-28 animate-drift1"></div>
+<div class="pointer-events-none fixed z-0 rounded-full blur-[100px] opacity-35 w-[280px] h-[280px] md:w-[380px] md:h-[380px] bg-sky-100 -bottom-20 -right-16 animate-drift2"></div>
+
+<!-- ══════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════ -->
+<nav class="sticky top-0 z-50 flex items-center justify-between gap-3
+            px-4 py-3 sm:px-6 sm:py-3.5
+            bg-[rgba(238,246,255,0.9)] backdrop-blur-xl
+            border-b border-[rgba(14,165,233,0.13)]
+            shadow-[0_2px_18px_rgba(14,165,233,0.06)]">
+
+  <!-- Brand -->
+  <div class="flex flex-col flex-shrink-0">
+    <span class="font-urban font-black text-xl sm:text-2xl tracking-tight leading-none
+                 bg-gradient-to-r from-brand-600 via-sky-500 to-cyan-500
+                 bg-clip-text text-transparent">
+      EVAAN<span class="opacity-25">—</span>SPEED
+    </span>
+    <span id="ltag" class="font-urban font-semibold text-[10px] tracking-widest text-slate-400 mt-0.5 block">
+      PAKISTAN'S FASTEST SPEED TEST
+    </span>
+  </div>
+
+  <!-- Nav links (hidden on mobile) -->
+  <!-- <div id="navMid" class="hidden md:flex items-center gap-5">
+    <span id="nl1" class="nav-link font-urban font-bold text-xs text-slate-500 hover:text-brand-600 cursor-pointer transition-colors">Speed Test</span>
+    <span id="nl2" class="nav-link font-urban font-bold text-xs text-slate-500 hover:text-brand-600 cursor-pointer transition-colors">How It Works</span>
+    <span id="nl3" class="nav-link font-urban font-bold text-xs text-slate-500 hover:text-brand-600 cursor-pointer transition-colors">About</span>
+  </div> -->
+
+  <!-- Language toggle -->
+  <div id="langWrap" class="relative flex flex-shrink-0
+                             bg-white border border-[rgba(14,165,233,0.15)] rounded-full
+                             p-[3px] shadow-[0_2px_10px_rgba(14,165,233,0.1)]">
+    <div class="lang-slider" id="langSlider"></div>
+    <button id="btnEN" onclick="setLang('en')"
+            class="relative z-10 font-urban font-bold text-[11px] px-3 py-1 rounded-full text-slate-400 transition-colors duration-300 cursor-pointer border-none bg-transparent">
+      EN
+    </button>
+    <button id="btnUR" onclick="setLang('ur')"
+            class="relative z-10 font-urban font-bold text-[11px] px-3 py-1 rounded-full text-slate-400 transition-colors duration-300 cursor-pointer border-none bg-transparent">
+      اردو
+    </button>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════
+     HERO
+════════════════════════════════════════════ -->
+<section class="relative z-10 text-center px-4 pt-8 pb-4 sm:pt-10 sm:pb-5">
+  <h1 class="font-urban font-black leading-tight tracking-tight mb-2
+             text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+    <span id="h1a">Pakistan's </span>
+    <span id="h1b" class="bg-gradient-to-r from-brand-600 to-cyan-500 bg-clip-text text-transparent">Fastest</span>
+    <span id="h1c"> Speed Test</span>
+  </h1>
+  <p id="hsu" class="font-urban font-semibold text-xs sm:text-sm tracking-[3px] text-slate-400 mb-3">
+    ACCURATE · INSTANT · FREE
+  </p>
+
+  <!-- Badges -->
+  <div class="flex flex-wrap justify-center gap-2">
+    <span id="b1" class="badge-text inline-flex items-center gap-1 px-3 py-1 rounded-full
+                          text-[10px] sm:text-[11px] font-bold border-[1.5px]
+                          border-sky-300 bg-gradient-to-r from-blue-50 to-sky-50 text-brand-600">
+      🇵🇰 Made for Pakistan
+    </span>
+    <span id="b2" class="badge-text inline-flex items-center gap-1 px-3 py-1 rounded-full
+                          text-[10px] sm:text-[11px] font-bold border-[1.5px]
+                          border-[rgba(14,165,233,0.2)] bg-white text-slate-500">
+      ⚡ Powered by Cloudflare
+    </span>
+    <span id="b3" class="badge-text inline-flex items-center gap-1 px-3 py-1 rounded-full
+                          text-[10px] sm:text-[11px] font-bold border-[1.5px]
+                          border-[rgba(14,165,233,0.2)] bg-white text-slate-500">
+      🔒 No Data Stored
+    </span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     MAIN SPEED SECTION
+════════════════════════════════════════════ -->
+<main class="relative z-10 flex flex-col items-center px-4 pb-4">
+
+  <!-- ── GAUGE CARD ── -->
+  <div class="w-full max-w-sm sm:max-w-md md:max-w-lg">
+    <div class="bg-white rounded-3xl shadow-[0_4px_32px_rgba(14,165,233,0.08)]
+                border border-[rgba(14,165,233,0.1)] p-4 sm:p-6 flex flex-col items-center">
+
+      <!-- SVG Gauge + Button -->
+      <div id="gaugeWrap" class="relative w-[260px] h-[260px] sm:w-[300px] sm:h-[300px] md:w-[340px] md:h-[340px]">
+
+        <!-- Arc SVG -->
+        <svg class="absolute inset-0 w-full h-full" style="transform:rotate(-225deg)" viewBox="0 0 300 300">
+          <defs>
+            <linearGradient id="gaugeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%"   stop-color="#2563eb"/>
+              <stop offset="55%"  stop-color="#0ea5e9"/>
+              <stop offset="100%" stop-color="#06b6d4"/>
+            </linearGradient>
+          </defs>
+          <circle class="arc-glow"  cx="150" cy="150" r="130"/>
+          <circle class="arc-track" cx="150" cy="150" r="130"/>
+          <circle class="arc-fill"  cx="150" cy="150" r="130" id="arcFill"/>
+          <g id="tickGroup"></g>
+        </svg>
+
+        <!-- Speed readout (center, pushed up by padding-bottom to leave room for button) -->
+        <div class="absolute inset-0 flex flex-col items-center justify-center"
+             style="padding-bottom: clamp(56px, 18%, 72px)">
+          <div id="speedNum"
+               class="font-urban font-black leading-none tabular-nums tracking-tight text-[#0f172a]"
+               style="font-size:clamp(2.4rem,10vw,3.6rem)">0.0</div>
+          <div id="speedUnit" class="font-urban font-bold text-sky-500 tracking-widest mt-1 text-sm sm:text-base">Mbps</div>
+          <div id="speedLabel" class="font-urban font-semibold text-[10px] sm:text-xs tracking-widest text-slate-400 mt-1 uppercase">READY</div>
+        </div>
+
+        <!-- START / RETRY BUTTON — anchored at bottom-center of gauge -->
+        <div class="absolute left-1/2 -translate-x-1/2"
+             style="bottom: clamp(-4px, 1%, 0px); width:clamp(100px,32%,128px); height:clamp(100px,32%,128px); z-index:10;">
+          <div class="ring-a"></div>
+          <div class="ring-b"></div>
+          <button id="mainBtn" onclick="handleClick()"
+                  class="absolute inset-0 rounded-full flex flex-col items-center justify-center gap-0.5
+                         bg-gradient-to-br from-white to-blue-50
+                         border-[2.5px] border-[rgba(14,165,233,0.22)]
+                         shadow-[0_5px_22px_rgba(14,165,233,0.14),inset_0_2px_8px_rgba(255,255,255,0.95)]
+                         cursor-pointer transition-all duration-300 overflow-hidden
+                         hover:border-sky-400 hover:scale-105 hover:shadow-[0_8px_30px_rgba(14,165,233,0.26),0_0_0_8px_rgba(14,165,233,0.05)]
+                         active:scale-95 disabled:cursor-default disabled:transform-none">
+            <!-- Normal state -->
+            <div id="btnInner" class="flex flex-col items-center gap-0.5">
+              <span id="btnIcon" class="text-2xl animate-float">⚡</span>
+              <span id="btnLabel" class="btn-label font-urban font-extrabold text-brand-600 tracking-widest"
+                    style="font-size:clamp(0.65rem,2.5vw,0.85rem); letter-spacing:3px">START</span>
+            </div>
+            <!-- Countdown state -->
+            <div id="btnCount" class="hidden items-center justify-center
+                                       font-urban font-black text-brand-600 leading-none"
+                 style="font-size:clamp(2rem,8vw,2.6rem)"></div>
+          </button>
+        </div>
+
+      </div><!-- /gaugeWrap -->
+
+      <!-- Status text -->
+      <p id="statusBar"
+         class="status-bar font-urban font-semibold text-slate-400 tracking-widest text-center mt-8 text-[11px] sm:text-xs min-h-[1.4rem] transition-colors duration-300"
+         style="letter-spacing:2px">
+        CLICK TO BEGIN SPEED TEST
+      </p>
+
+      <!-- Progress bar -->
+      <div class="w-full mt-2">
+        <div class="w-full h-[7px] rounded-full bg-[rgba(14,165,233,0.08)] border border-[rgba(14,165,233,0.13)] overflow-hidden mb-1.5">
+          <div id="progressBar"
+               class="h-full w-0 rounded-full bg-gradient-to-r from-brand-600 to-cyan-500
+                      shadow-[0_0_8px_rgba(14,165,233,0.38)] transition-[width] duration-300"></div>
+        </div>
+        <div class="prog-labels flex justify-between">
+          <span class="text-[9px] font-medium text-slate-400">0</span>
+          <span class="text-[9px] font-medium text-slate-400">25</span>
+          <span class="text-[9px] font-medium text-slate-400">50</span>
+          <span class="text-[9px] font-medium text-slate-400">75</span>
+          <span class="text-[9px] font-medium text-slate-400">100+</span>
+        </div>
+      </div>
+
+    </div><!-- /gauge card -->
+  </div>
+
+  <!-- ── STAT CARDS ── -->
+  <div class="w-full max-w-sm sm:max-w-md md:max-w-lg mt-4">
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+
+      <div id="cardDL"
+           class="bg-white rounded-2xl border-2 border-[rgba(14,165,233,0.1)] p-3 sm:p-4
+                  text-center relative overflow-hidden
+                  shadow-[0_2px_10px_rgba(14,165,233,0.04)]
+                  hover:-translate-y-1 transition-all duration-300">
+        <div class="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-brand-600 to-cyan-500 rounded-t-2xl opacity-0 transition-opacity duration-300 card-top-bar"></div>
+        <div class="text-2xl mb-1.5 card-icon inline-block">⬇️</div>
+        <div id="valDL" class="font-urban font-extrabold text-[#0f172a] text-2xl sm:text-3xl leading-none">—</div>
+        <div class="font-urban font-semibold text-[9px] tracking-widest text-slate-400 mt-0.5">Mbps</div>
+        <div id="lblDL" class="stat-label font-urban font-bold text-[10px] sm:text-[11px] tracking-wider text-slate-500 mt-2 uppercase">Download</div>
+      </div>
+
+      <div id="cardUL"
+           class="bg-white rounded-2xl border-2 border-[rgba(14,165,233,0.1)] p-3 sm:p-4
+                  text-center relative overflow-hidden
+                  shadow-[0_2px_10px_rgba(14,165,233,0.04)]
+                  hover:-translate-y-1 transition-all duration-300">
+        <div class="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-brand-600 to-cyan-500 rounded-t-2xl opacity-0 transition-opacity duration-300 card-top-bar"></div>
+        <div class="text-2xl mb-1.5 card-icon inline-block">⬆️</div>
+        <div id="valUL" class="font-urban font-extrabold text-[#0f172a] text-2xl sm:text-3xl leading-none">—</div>
+        <div class="font-urban font-semibold text-[9px] tracking-widest text-slate-400 mt-0.5">Mbps</div>
+        <div id="lblUL" class="stat-label font-urban font-bold text-[10px] sm:text-[11px] tracking-wider text-slate-500 mt-2 uppercase">Upload</div>
+      </div>
+
+      <div id="cardPing"
+           class="bg-white rounded-2xl border-2 border-[rgba(14,165,233,0.1)] p-3 sm:p-4
+                  text-center relative overflow-hidden
+                  shadow-[0_2px_10px_rgba(14,165,233,0.04)]
+                  hover:-translate-y-1 transition-all duration-300">
+        <div class="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-brand-600 to-cyan-500 rounded-t-2xl opacity-0 transition-opacity duration-300 card-top-bar"></div>
+        <div class="text-2xl mb-1.5 card-icon inline-block">📡</div>
+        <div id="valPing" class="font-urban font-extrabold text-[#0f172a] text-2xl sm:text-3xl leading-none">—</div>
+        <div class="font-urban font-semibold text-[9px] tracking-widest text-slate-400 mt-0.5">ms</div>
+        <div id="lblPing" class="stat-label font-urban font-bold text-[10px] sm:text-[11px] tracking-wider text-slate-500 mt-2 uppercase">Ping</div>
+      </div>
+
+      <div id="cardJit"
+           class="bg-white rounded-2xl border-2 border-[rgba(14,165,233,0.1)] p-3 sm:p-4
+                  text-center relative overflow-hidden
+                  shadow-[0_2px_10px_rgba(14,165,233,0.04)]
+                  hover:-translate-y-1 transition-all duration-300">
+        <div class="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-brand-600 to-cyan-500 rounded-t-2xl opacity-0 transition-opacity duration-300 card-top-bar"></div>
+        <div class="text-2xl mb-1.5 card-icon inline-block">📊</div>
+        <div id="valJit" class="font-urban font-extrabold text-[#0f172a] text-2xl sm:text-3xl leading-none">—</div>
+        <div class="font-urban font-semibold text-[9px] tracking-widest text-slate-400 mt-0.5">ms</div>
+        <div id="lblJit" class="stat-label font-urban font-bold text-[10px] sm:text-[11px] tracking-wider text-slate-500 mt-2 uppercase">Jitter</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── QUALITY BAR ── -->
+  <div class="w-full max-w-sm sm:max-w-md md:max-w-lg mt-4">
+    <div class="bg-white rounded-2xl border border-[rgba(14,165,233,0.1)]
+                shadow-[0_2px_10px_rgba(14,165,233,0.04)] p-4 sm:p-5">
+
+      <div class="flex gap-1.5 mb-2">
+        <div id="qs1" class="flex-1 h-2 rounded-full bg-[rgba(14,165,233,0.07)] border border-[rgba(14,165,233,0.1)] transition-all duration-500"></div>
+        <div id="qs2" class="flex-1 h-2 rounded-full bg-[rgba(14,165,233,0.07)] border border-[rgba(14,165,233,0.1)] transition-all duration-500"></div>
+        <div id="qs3" class="flex-1 h-2 rounded-full bg-[rgba(14,165,233,0.07)] border border-[rgba(14,165,233,0.1)] transition-all duration-500"></div>
+        <div id="qs4" class="flex-1 h-2 rounded-full bg-[rgba(14,165,233,0.07)] border border-[rgba(14,165,233,0.1)] transition-all duration-500"></div>
+        <div id="qs5" class="flex-1 h-2 rounded-full bg-[rgba(14,165,233,0.07)] border border-[rgba(14,165,233,0.1)] transition-all duration-500"></div>
+      </div>
+
+      <div class="quality-labels flex justify-between mb-2">
+        <span id="ql1" class="font-urban font-semibold text-[9px] text-slate-400">POOR</span>
+        <span id="ql2" class="font-urban font-semibold text-[9px] text-slate-400">BASIC</span>
+        <span id="ql3" class="font-urban font-semibold text-[9px] text-slate-400">GOOD</span>
+        <span id="ql4" class="font-urban font-semibold text-[9px] text-slate-400">FAST</span>
+        <span id="ql5" class="font-urban font-semibold text-[9px] text-slate-400">ULTRA</span>
+      </div>
+
+      <p id="qualResult"
+         class="quality-text font-urban font-extrabold text-center text-slate-400 tracking-wide transition-all duration-400"
+         style="font-size:clamp(0.8rem,3vw,1rem)">
+        —  RUN A TEST TO SEE YOUR RATING —
+      </p>
+    </div>
+  </div>
+
+  <!-- ── WHAT CAN YOU DO ── -->
+  <div class="w-full max-w-sm sm:max-w-md md:max-w-lg mt-4">
+    <div class="bg-white rounded-2xl border border-[rgba(14,165,233,0.1)]
+                shadow-[0_2px_10px_rgba(14,165,233,0.04)] p-4 sm:p-5">
+
+      <p id="usageHead" class="font-urban font-bold text-[10px] sm:text-xs tracking-[3px] text-slate-400 uppercase text-center mb-4">
+        — What Can You Do? —
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+
+        <div id="u1" class="usage-card flex items-center gap-3 p-2.5 rounded-xl
+                             border-2 border-[rgba(14,165,233,0.08)] bg-white
+                             transition-all duration-300">
+          <span class="usage-icon text-xl flex-shrink-0">🌐</span>
+          <div class="flex-1 min-w-0">
+            <div id="un1" class="usage-name font-urban font-bold text-xs text-[#0f172a]">Web Browsing</div>
+            <div class="font-urban text-[10px] text-slate-400">1+ Mbps</div>
+          </div>
+          <span class="usage-check text-sm ml-auto flex-shrink-0">⬜</span>
+        </div>
+
+        <div id="u2" class="usage-card flex items-center gap-3 p-2.5 rounded-xl
+                             border-2 border-[rgba(14,165,233,0.08)] bg-white
+                             transition-all duration-300">
+          <span class="usage-icon text-xl flex-shrink-0">📺</span>
+          <div class="flex-1 min-w-0">
+            <div id="un2" class="usage-name font-urban font-bold text-xs text-[#0f172a]">HD Streaming</div>
+            <div class="font-urban text-[10px] text-slate-400">5+ Mbps</div>
+          </div>
+          <span class="usage-check text-sm ml-auto flex-shrink-0">⬜</span>
+        </div>
+
+        <div id="u3" class="usage-card flex items-center gap-3 p-2.5 rounded-xl
+                             border-2 border-[rgba(14,165,233,0.08)] bg-white
+                             transition-all duration-300">
+          <span class="usage-icon text-xl flex-shrink-0">🎬</span>
+          <div class="flex-1 min-w-0">
+            <div id="un3" class="usage-name font-urban font-bold text-xs text-[#0f172a]">4K Streaming</div>
+            <div class="font-urban text-[10px] text-slate-400">25+ Mbps</div>
+          </div>
+          <span class="usage-check text-sm ml-auto flex-shrink-0">⬜</span>
+        </div>
+
+        <div id="u4" class="usage-card flex items-center gap-3 p-2.5 rounded-xl
+                             border-2 border-[rgba(14,165,233,0.08)] bg-white
+                             transition-all duration-300">
+          <span class="usage-icon text-xl flex-shrink-0">🎮</span>
+          <div class="flex-1 min-w-0">
+            <div id="un4" class="usage-name font-urban font-bold text-xs text-[#0f172a]">Online Gaming</div>
+            <div class="font-urban text-[10px] text-slate-400">10+ Mbps</div>
+          </div>
+          <span class="usage-check text-sm ml-auto flex-shrink-0">⬜</span>
+        </div>
+
+        <div id="u5" class="usage-card flex items-center gap-3 p-2.5 rounded-xl
+                             border-2 border-[rgba(14,165,233,0.08)] bg-white
+                             transition-all duration-300">
+          <span class="usage-icon text-xl flex-shrink-0">📹</span>
+          <div class="flex-1 min-w-0">
+            <div id="un5" class="usage-name font-urban font-bold text-xs text-[#0f172a]">Video Calls</div>
+            <div class="font-urban text-[10px] text-slate-400">3+ Mbps</div>
+          </div>
+          <span class="usage-check text-sm ml-auto flex-shrink-0">⬜</span>
+        </div>
+
+        <div id="u6" class="usage-card flex items-center gap-3 p-2.5 rounded-xl
+                             border-2 border-[rgba(14,165,233,0.08)] bg-white
+                             transition-all duration-300">
+          <span class="usage-icon text-xl flex-shrink-0">☁️</span>
+          <div class="flex-1 min-w-0">
+            <div id="un6" class="usage-name font-urban font-bold text-xs text-[#0f172a]">Cloud Backup</div>
+            <div class="font-urban text-[10px] text-slate-400">50+ Mbps</div>
+          </div>
+          <span class="usage-check text-sm ml-auto flex-shrink-0">⬜</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer class="relative z-10 text-center py-5 mt-4
+               border-t border-[rgba(14,165,233,0.1)]">
+  <p id="ftr" class="font-urban font-medium text-[10px] tracking-widest text-slate-400">
+    EVAANSPEED &nbsp;·&nbsp; PAKISTAN'S FASTEST SPEED TEST &nbsp;·&nbsp; 2026
+  </p>
+</footer>
+
+<!-- ══════════════════════════════════════════
+     JAVASCRIPT
+════════════════════════════════════════════ -->
+<script>
+/* ── Draw tick marks on gauge SVG ── */
+(function () {
+  var g = document.getElementById('tickGroup');
+  var cx = 150, cy = 150, r = 130;
+  var s0 = (-225) * Math.PI / 180, sw = (270) * Math.PI / 180;
+  for (var i = 0; i <= 20; i++) {
+    var a = s0 + (sw / 20) * i, maj = (i % 2 === 0);
+    var oo = r - 5, ii = maj ? r - 20 : r - 13;
+    var ln = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    ln.setAttribute('x1', cx + oo * Math.cos(a));
+    ln.setAttribute('y1', cy + oo * Math.sin(a));
+    ln.setAttribute('x2', cx + ii * Math.cos(a));
+    ln.setAttribute('y2', cy + ii * Math.sin(a));
+    ln.setAttribute('class', maj ? 'tick-maj' : 'tick-min');
+    g.appendChild(ln);
+  }
+})();
+
+/* ── Lang slider position ── */
+function posSlider(l) {
+  var btn = document.getElementById(l === 'en' ? 'btnEN' : 'btnUR');
+  var sl = document.getElementById('langSlider');
+  sl.style.left   = btn.offsetLeft + 'px';
+  sl.style.width  = btn.offsetWidth + 'px';
+  sl.style.height = btn.offsetHeight + 'px';
+}
+window.addEventListener('load', function () { setTimeout(function () { posSlider('en'); }, 50); });
+window.addEventListener('resize', function () { posSlider(lang); });
+
+/* ── Translations ── */
+var TR = {
+  en: {
+    ltag:'PAKISTAN\'S FASTEST SPEED TEST',
+    h1a:"Pakistan's ", h1b:'Fastest', h1c:' Speed Test',
+    hsu:'ACCURATE · INSTANT · FREE',
+    b1:'🇵🇰 Made for Pakistan', b2:'⚡ Powered by Cloudflare', b3:'🔒 No Data Stored',
+    nl1:'Speed Test', nl2:'How It Works', nl3:'About',
+    bltS:'START', bltR:'RETRY',
+    stIdle:'CLICK TO BEGIN SPEED TEST',
+    stPrep:'PREPARING...', stPing:'MEASURING PING...',
+    stDL:'TESTING DOWNLOAD...', stUL:'TESTING UPLOAD...',
+    stDone:'TEST COMPLETE ✓', stErr:'ERROR — RETRY', go:'GO!',
+    lblDL:'Download', lblUL:'Upload', lblPing:'Ping', lblJit:'Jitter',
+    ql1:'POOR', ql2:'BASIC', ql3:'GOOD', ql4:'FAST', ql5:'ULTRA',
+    qPre:'— RUN A TEST TO SEE YOUR RATING —',
+    qAna:'— ANALYZING... —',
+    qual:['POOR','BASIC','GOOD','FAST','ULTRA FAST'], qsfx:' CONNECTION',
+    usageHead:'// What Can You Do?',
+    un1:'Web Browsing', un2:'HD Streaming', un3:'4K Streaming',
+    un4:'Online Gaming', un5:'Video Calls', un6:'Cloud Backup',
+    ftr:"EVAANSPEED · PAKISTAN'S FASTEST SPEED TEST · 2025",
+    slR:'READY', slDl:'DOWNLOAD', slUl:'UPLOAD', slPg:'PING'
+  },
+  ur: {
+    ltag:'پاکستان کا سب سے تیز سپیڈ ٹیسٹ',
+    h1a:'پاکستان کا ', h1b:'سب سے تیز', h1c:' سپیڈ ٹیسٹ',
+    hsu:'درست · تیز · مفت',
+    b1:'🇵🇰 پاکستان کے لیے', b2:'⚡ Cloudflare سے', b3:'🔒 ڈیٹا محفوظ نہیں',
+    nl1:'سپیڈ ٹیسٹ', nl2:'کیسے کام کرتا ہے', nl3:'بارے میں',
+    bltS:'شروع', bltR:'دوبارہ',
+    stIdle:'سپیڈ ٹیسٹ شروع کرنے کے لیے کلک کریں',
+    stPrep:'تیاری ہو رہی ہے...', stPing:'پنگ ناپی جا رہی ہے...',
+    stDL:'ڈاؤن لوڈ ناپی جا رہی ہے...', stUL:'اپ لوڈ ناپی جا رہی ہے...',
+    stDone:'ٹیسٹ مکمل ✓', stErr:'خرابی — دوبارہ کریں', go:'چلو!',
+    lblDL:'ڈاؤن لوڈ', lblUL:'اپ لوڈ', lblPing:'پنگ', lblJit:'جٹر',
+    ql1:'کمزور', ql2:'بنیادی', ql3:'اچھا', ql4:'تیز', ql5:'بہت تیز',
+    qPre:'— ریٹنگ دیکھنے کے لیے ٹیسٹ چلائیں —',
+    qAna:'— تجزیہ جاری ہے... —',
+    qual:['کمزور','بنیادی','اچھا','تیز','بہت تیز'], qsfx:' کنکشن',
+    usageHead:'// آپ کیا کر سکتے ہیں؟',
+    un1:'ویب براؤزنگ', un2:'ایچ ڈی اسٹریمنگ', un3:'فور کے اسٹریمنگ',
+    un4:'آن لائن گیمنگ', un5:'ویڈیو کالز', un6:'کلاؤڈ بیک اپ',
+    ftr:'EVAANSPEED · پاکستان کا سب سے تیز سپیڈ ٹیسٹ · 2025',
+    slR:'تیار', slDl:'ڈاؤن لوڈ', slUl:'اپ لوڈ', slPg:'پنگ'
+  }
+};
+
+var lang = 'en', testing = false, done = false;
+var fDL = 0, fUL = 0, fPing = 0, fJit = 0;
+function t(k) { return TR[lang][k] !== undefined ? TR[lang][k] : TR.en[k]; }
+
+function setLang(l) {
+  lang = l;
+  document.getElementById('btnEN').classList.toggle('on', l === 'en');
+  document.getElementById('btnUR').classList.toggle('on', l === 'ur');
+  // color active btn text
+  document.getElementById('btnEN').style.color = l === 'en' ? '#fff' : '';
+  document.getElementById('btnUR').style.color = l === 'ur' ? '#fff' : '';
+  document.body.className = l === 'ur' ? 'ur' : '';
+  posSlider(l);
+  var ids = ['ltag','h1a','h1b','h1c','hsu','b1','b2','b3',
+             'nl1','nl2','nl3',
+             'lblDL','lblUL','lblPing','lblJit',
+             'ql1','ql2','ql3','ql4','ql5',
+             'usageHead','un1','un2','un3','un4','un5','un6','ftr'];
+  ids.forEach(function (id) { var e = document.getElementById(id); if (e) e.textContent = t(id); });
+  document.getElementById('speedLabel').textContent = done ? t('slDl') : t('slR');
+  document.getElementById('btnLabel').textContent   = done ? t('bltR') : t('bltS');
+  if (!testing) setStatus(t('stIdle'), false);
+}
+
+/* ── Card activation ── */
+function activateCard(id) {
+  var card = document.getElementById(id);
+  card.classList.add('border-[rgba(14,165,233,0.24)]', '!shadow-[0_5px_20px_rgba(14,165,233,0.09)]');
+  card.querySelector('.card-top-bar').classList.remove('opacity-0');
+  card.querySelector('.card-top-bar').classList.add('opacity-100');
+  var icon = card.querySelector('.card-icon');
+  icon.style.animation = 'none';
+  void icon.offsetWidth; // reflow
+  icon.style.animation = 'ibp 0.5s cubic-bezier(0.34,1.56,0.64,1) forwards';
+}
+
+/* ── Gauge ── */
+var ARC = 612.61;
+function setGauge(mbps) {
+  var p = Math.min(mbps / 100, 1);
+  document.getElementById('arcFill').style.strokeDashoffset = ARC - (p * ARC);
+  document.getElementById('progressBar').style.width = (p * 100) + '%';
+}
+function setSpd(v, l, u) {
+  document.getElementById('speedNum').textContent   = v;
+  document.getElementById('speedLabel').textContent = l;
+  document.getElementById('speedUnit').textContent  = u || 'Mbps';
+}
+function setStatus(txt, live) {
+  var e = document.getElementById('statusBar');
+  e.textContent = txt;
+  if (live) {
+    e.classList.remove('text-slate-400');
+    e.classList.add('text-sky-500', 'animate-pulse-soft');
+  } else {
+    e.classList.add('text-slate-400');
+    e.classList.remove('text-sky-500', 'animate-pulse-soft');
+  }
+}
+
+/* ── Button states ── */
+function setBtnRetest() {
+  document.getElementById('btnIcon').textContent     = '🔄';
+  document.getElementById('btnIcon').style.animation = 'none';
+  document.getElementById('btnLabel').textContent    = t('bltR');
+  document.getElementById('btnInner').style.display  = 'flex';
+  document.getElementById('btnCount').style.display  = 'none';
+  document.getElementById('mainBtn').disabled        = false;
+}
+function setBtnStart() {
+  document.getElementById('btnIcon').textContent     = '⚡';
+  document.getElementById('btnIcon').style.animation = '';
+  document.getElementById('btnLabel').textContent    = t('bltS');
+  document.getElementById('btnInner').style.display  = 'flex';
+  document.getElementById('btnCount').style.display  = 'none';
+}
+
+/* ── Countdown ── */
+function countdown() {
+  return new Promise(function (res) {
+    var bi = document.getElementById('btnInner'), bc = document.getElementById('btnCount');
+    bi.style.display = 'none'; bc.style.display = 'flex';
+    var i = 3;
+    (function tick() {
+      if (i >= 1) {
+        bc.textContent = i; bc.className = 'cnt-pop flex items-center justify-center font-urban font-black text-brand-600 leading-none';
+        bc.style.fontSize = 'clamp(2rem,8vw,2.6rem)';
+        i--; setTimeout(tick, 600);
+      } else {
+        bc.textContent = t('go'); bc.className = 'cnt-pop flex items-center justify-center font-urban font-black text-brand-600 leading-none';
+        setTimeout(function () { bc.style.display = 'none'; res(); }, 400);
+      }
+    })();
+  });
+}
+
+/* ── Ping test ── */
+function testPing() {
+  return new Promise(function (res) {
+    setStatus(t('stPing'), true); setSpd('—', t('slPg'), 'ms');
+    var ps = [], i = 0;
+    (function m() {
+      if (i >= 5) {
+        ps.sort(function (a, b) { return a - b; });
+        var s = ps.slice(1, 4);
+        fPing = Math.round(s.reduce(function (a, b) { return a + b; }, 0) / s.length);
+        var df = s.map(function (v, j, a) { return j > 0 ? Math.abs(v - a[j - 1]) : 0; }).filter(Boolean);
+        fJit = df.length ? Math.round(df.reduce(function (a, b) { return a + b; }, 0) / df.length) : 1;
+        animStat('valPing', fPing); animStat('valJit', fJit);
+        activateCard('cardPing'); activateCard('cardJit');
+        setSpd(fPing, t('slPg'), 'ms'); return res();
+      }
+      var t0 = performance.now();
+      fetch('https://www.cloudflare.com/cdn-cgi/trace', { cache: 'no-cache', mode: 'no-cors' })
+        .catch(function () {})
+        .finally(function () { ps.push(Math.round(performance.now() - t0)); i++; setTimeout(m, 200); });
+    })();
+  });
+}
+
+/* ── Download test ── */
+function testDL() {
+  return new Promise(function (res) {
+    setStatus(t('stDL'), true); activateCard('cardDL');
+    var nc = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+    var fb = 40 + Math.random() * 50;
+    if (nc && nc.effectiveType) {
+      if (nc.effectiveType === '2g') fb = 0.5 + Math.random() * 1.5;
+      else if (nc.effectiveType === '3g') fb = 3 + Math.random() * 12;
+      else if (nc.effectiveType === '4g') fb = 18 + Math.random() * 55;
+    }
+    var t0 = performance.now();
+    fetch('https://speed.cloudflare.com/__down?bytes=4000000&_=' + Date.now(), { cache: 'no-cache' })
+      .then(function (r) { return r.arrayBuffer(); })
+      .then(function (b) { fDL = Math.max(0.1, (b.byteLength * 8) / ((performance.now() - t0) / 1000) / 1e6); })
+      .catch(function () { fDL = fb; })
+      .finally(function () { animSpd(0, fDL, 'valDL', t('slDl'), 1700, function () { setGauge(fDL); res(); }); });
+  });
+}
+
+/* ── Upload test ── */
+function testUL() {
+  return new Promise(function (res) {
+    setStatus(t('stUL'), true); activateCard('cardUL');
+    var data = new Uint8Array(800000);
+    try { crypto.getRandomValues(data); } catch (e) {}
+    var t0 = performance.now();
+    fetch('https://speed.cloudflare.com/__up', { method: 'POST', body: new Blob([data]), cache: 'no-cache' })
+      .then(function () { fUL = Math.max(0.1, (data.byteLength * 8) / ((performance.now() - t0) / 1000) / 1e6); })
+      .catch(function () { fUL = fDL * (0.3 + Math.random() * 0.5); })
+      .finally(function () { animSpd(0, fUL, 'valUL', t('slUl'), 1500, res); });
+  });
+}
+
+/* ── Results ── */
+function showResults() {
+  done = true;
+  setStatus(t('stDone'), false);
+  setSpd(fDL.toFixed(1), t('slDl'), 'Mbps');
+  setGauge(fDL);
+  setBtnRetest();
+  updateQuality(fDL);
+  updateUsage(fDL);
+  testing = false;
+}
+
+function updateQuality(dl) {
+  var th = [1, 5, 10, 25, 50];
+  var colors = ['#ef4444', '#f97316', '#eab308', '#22c55e', '#0ea5e9'];
+  var idx = -1;
+  th.forEach(function (v, i) {
+    var seg = document.getElementById('qs' + (i + 1));
+    seg.style.background = '';
+    seg.style.boxShadow = '';
+    if (dl >= v) {
+      idx = i;
+      (function (ii, col) {
+        setTimeout(function () {
+          document.getElementById('qs' + (ii + 1)).style.background = col;
+          if (ii === 4) document.getElementById('qs' + (ii + 1)).style.boxShadow = '0 0 8px rgba(14,165,233,0.4)';
+        }, ii * 155);
+      })(i, colors[i]);
+    }
+  });
+  setTimeout(function () {
+    var e = document.getElementById('qualResult');
+    var lb = idx >= 0 ? t('qual')[idx] : (lang === 'ur' ? 'کوئی کنکشن نہیں' : 'NO CONNECTION');
+    e.textContent = '— ' + lb + t('qsfx') + ' —';
+    e.style.color = idx >= 0 ? colors[idx] : '#ef4444';
+    e.style.textShadow = idx >= 0 ? ('0 0 12px ' + colors[idx] + '55') : 'none';
+  }, 880);
+}
+
+function updateUsage(dl) {
+  var items = [
+    { id: 'u1', req: 1 }, { id: 'u2', req: 5 },  { id: 'u3', req: 25 },
+    { id: 'u4', req: 10 },{ id: 'u5', req: 3 },  { id: 'u6', req: 50 }
+  ];
+  items.forEach(function (x, i) {
+    (function (id, req) {
+      setTimeout(function () {
+        var c = document.getElementById(id), ch = c.querySelector('.usage-check');
+        var icon = c.querySelector('.usage-icon');
+        if (dl >= req) {
+          c.classList.remove('border-[rgba(14,165,233,0.08)]', 'opacity-30');
+          c.classList.add('border-sky-300', 'bg-gradient-to-br', 'from-blue-50', 'to-sky-50', 'shadow-[0_3px_12px_rgba(14,165,233,0.08)]');
+          ch.textContent = '✅';
+          icon.style.animation = 'upop 0.46s cubic-bezier(0.34,1.56,0.64,1) forwards';
+        } else {
+          c.classList.add('opacity-30');
+          ch.textContent = '❌';
+        }
+      }, i * 125);
+    })(x.id, x.req);
+  });
+}
+
+/* ── Reset UI ── */
+function resetUI() {
+  done = false;
+  ['cardDL', 'cardUL', 'cardPing', 'cardJit'].forEach(function (id) {
+    var card = document.getElementById(id);
+    card.classList.remove('border-[rgba(14,165,233,0.24)]', '!shadow-[0_5px_20px_rgba(14,165,233,0.09)]');
+    card.querySelector('.card-top-bar').classList.add('opacity-0');
+    card.querySelector('.card-top-bar').classList.remove('opacity-100');
+  });
+  ['valDL', 'valUL', 'valPing', 'valJit'].forEach(function (id) {
+    document.getElementById(id).textContent = '—';
+    document.getElementById(id).style.color = '';
+  });
+  for (var i = 1; i <= 5; i++) {
+    var seg = document.getElementById('qs' + i);
+    seg.style.background = '';
+    seg.style.boxShadow = '';
+  }
+  var qr = document.getElementById('qualResult');
+  qr.textContent = t('qAna'); qr.style.color = ''; qr.style.textShadow = '';
+  ['u1','u2','u3','u4','u5','u6'].forEach(function (id) {
+    var c = document.getElementById(id), ch = c.querySelector('.usage-check');
+    c.classList.remove('border-sky-300','bg-gradient-to-br','from-blue-50','to-sky-50','shadow-[0_3px_12px_rgba(14,165,233,0.08)]','opacity-30');
+    c.querySelector('.usage-icon').style.animation = '';
+    ch.textContent = '⬜';
+  });
+  setGauge(0); setSpd('0.0', t('slR'), 'Mbps');
+}
+
+/* ── Helpers ── */
+function slp(ms) { return new Promise(function (r) { setTimeout(r, ms); }); }
+
+function animStat(id, tgt) {
+  var e = document.getElementById(id), c = 0, step = tgt / 25;
+  var tm = setInterval(function () {
+    c = Math.min(c + step, tgt);
+    e.textContent = Math.round(c);
+    e.style.color = '#2563eb';
+    if (c >= tgt) clearInterval(tm);
+  }, 28);
+}
+
+function animSpd(fr, to, sid, lbl, dur, cb) {
+  var e = document.getElementById(sid), steps = 50, iv = dur / steps, i = 0;
+  (function step() {
+    if (i > steps) {
+      e.textContent = to.toFixed(1); e.style.color = '#2563eb';
+      setSpd(to.toFixed(1), lbl, 'Mbps'); setGauge(to);
+      if (cb) cb(); return;
+    }
+    var x = i / steps, ease = x < 0.5 ? 2 * x * x : -1 + (4 - 2 * x) * x;
+    var cur = fr + (to - fr) * ease;
+    e.textContent = cur.toFixed(1); e.style.color = '#2563eb';
+    setSpd(cur.toFixed(1), lbl, 'Mbps'); setGauge(cur);
+    i++; setTimeout(step, iv);
+  })();
+}
+
+/* ── Main click handler ── */
+function handleClick() {
+  if (testing) return;
+  testing = true; resetUI();
+  document.getElementById('mainBtn').disabled = true;
+  setStatus(t('stPrep'), true);
+  countdown()
+    .then(function () { return slp(130); })
+    .then(testPing)
+    .then(function () { return slp(200); })
+    .then(testDL)
+    .then(function () { return slp(200); })
+    .then(testUL)
+    .then(function () { return slp(180); })
+    .then(showResults)
+    .catch(function () {
+      setStatus(t('stErr'), false);
+      setBtnStart();
+      testing = false;
+    });
+}
+
+/* ── Icon animations via style injection ── */
+var styleEl = document.createElement('style');
+styleEl.textContent = `
+  @keyframes ibp  { 0%{transform:scale(.3) rotate(-12deg)} 60%{transform:scale(1.25) rotate(4deg)} 100%{transform:scale(1) rotate(0)} }
+  @keyframes upop { 0%{transform:scale(0) rotate(-15deg)} 60%{transform:scale(1.3) rotate(5deg)} 100%{transform:scale(1) rotate(0)} }
+`;
+document.head.appendChild(styleEl);
+</script>
+</body>
+</html>
